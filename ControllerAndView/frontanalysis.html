@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="refresh" content="2">
+    <head>
+        <script src="jquery-3.2.1.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $.get("getlivecount.php",function(data,success){
+                    console.log(data+" "+success);
+                    var data=JSON.parse(data);
+                    var livecount=data['count'];
+                    $("#livecount").text(livecount);
+                    console.log(livecount)
+                });
+                
+              
+                    $.get("getliveusers.php",function(data,success){
+                    console.log(data+" "+success);
+                    var data=JSON.parse(data);
+                    for(var i=0;i<data.length;i++){
+                        $("#liveusers").append('<p>'+data[i].username+'</p>');
+                    }
+                    console.log(data)
+                    
+                    
+                  
+
+               
+            });
+            });
+        </script>
+    </head>
+    <body>
+        
+        <div> 
+            <p id="livecount"></p>
+        </div>
+        <div id="liveusers">
+            
+        </div>
+           
+        
+    </body>
+</html>

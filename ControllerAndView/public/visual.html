@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Visual page
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+        .view {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="view">
+        <img id="play">
+        <div id="logger"></div>
+    </div>
+    <script>
+        var socket = io();
+        socket.on('stream', function(image) {
+            var img = document.getElementById("play");
+            img.src = image;
+        });
+    </script>
+</body>
+
+</html>
