@@ -3,6 +3,11 @@ Live video streaming web application that could be accessed from anywhere and an
 
 --
 ## Screenshot
-<img src="https://raw.githubusercontent.com/pandavshyam/Streaming-Platform/blob/main/Screenshots/HomePage.PNG" width="300px" height="200px"/>
-<img src="https://raw.githubusercontent.com/pandavshyam/Streaming-Platform/blob/main/Screenshots/StreamDetails.PNG"/>
-<img src="https://raw.githubusercontent.com/pandavshyam/Streaming-Platform/blob/main/Screenshots/UserStreamView.PNG"/>
+<p>
+  <img src="https://raw.githubusercontent.com/pandavshyam/Streaming-Platform/main/Screenshots/HomePage.PNG" width="700px" height="450px"/>
+  <img src="https://raw.githubusercontent.com/pandavshyam/Streaming-Platform/main/Screenshots/StreamDetails.PNG" width="700px" height="450px"/>
+  <img src="https://raw.githubusercontent.com/pandavshyam/Streaming-Platform/main/Screenshots/UserStreamView.PNG" width="700px" height="450px"/>
+</p>
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
